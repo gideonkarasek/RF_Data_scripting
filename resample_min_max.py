@@ -1,6 +1,7 @@
 # ------------------------------------------
 # Endurance Test Data Analysis
 # Author: Gideon Karasek
+# Created: Friday, ‎November ‎1, ‎2024, ‏‎3:23:11 PM
 # Description: Imports csv file, selects desired column, resamples values to create a new dataframe
 #   with min/max values from each minute of data; can be adjusted to change resample period/calculation,
 #   or to focus on a different column of data
@@ -63,3 +64,4 @@ filepath_header = 'C:/Users/gkarasek/Desktop/PTL Testing/EandS Testing/temp'
 print('Enter file name: ')
 file_to_save = input()
 grouped_df.to_csv(path_or_buf=f'{filepath_header}/{file_to_save}.csv', mode='a')
+
