@@ -1,6 +1,7 @@
 # ------------------------------------------
 # CSV file combiner
 # Author: Gideon Karasek
+# Created: ‎Thursday, ‎September ‎5, ‎2024, ‏‎3:13:27 PM
 # Description: Prompts user to select files, imports/concatenates files into one data frame,
 #   saves out to csv file with user specified name
 # To Do: Add method to verify/force selected files to be csv
@@ -38,3 +39,4 @@ print('Enter file name: ')
 file_to_save = input()
 # Will only create a new file if file path does not exist, otherwise adds to end of old file
 df.to_csv(path_or_buf=f'{filepath_header}/{file_to_save}.csv', mode='a')
+
