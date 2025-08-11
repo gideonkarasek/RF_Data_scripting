@@ -1,6 +1,7 @@
 # ------------------------------------------
 # Datetime formatter
 # Author: Gideon Karasek
+# Created: Thursday, ‎June ‎6, ‎2024, ‏‎12:12:17 PM
 # Description: Prompts user to select files, ensures csv files have properly formatted date and time columns
 # To Do: Add method to verify/force selected files to be csv
 # ------------------------------------------
@@ -34,3 +35,4 @@ df['date'] = pd.to_datetime(df['date'], format='%m/%d/%Y %H:%M:%S').dt.strftime(
 
 # save to new csv file, using current date in file name
 df.to_csv(path_or_buf=f'Logs/Endurance Test Log {date.today().strftime("%Y%m%d")} Formatted for PowerBI.csv', mode='a')
+
