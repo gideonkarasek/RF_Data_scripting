@@ -1,6 +1,7 @@
 # ------------------------------------------
 # Endurance Test Data Analysis
 # Author: Gideon Karasek
+# Created: Thursday, ‎September ‎5, ‎2024, ‏‎4:30:21 PM
 # Description: Imports data file produced by specific test, extracts milliseconds from time column
 # To Do: Add method to verify/force selected files to be csv
 # ------------------------------------------
@@ -27,3 +28,4 @@ df_final.to_csv(path_or_buf=f'{file_selection[:-4]}_final.csv', mode='w') # drop
 
 # print confirmation of script finishing in terminal
 print('Milliseconds extracted, file saved as:\n' + f'{file_selection[:-4]}_final.csv')
+
