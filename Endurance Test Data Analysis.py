@@ -1,6 +1,7 @@
 # ------------------------------------------
 # Endurance Test Data Analysis
 # Author: Gideon Karasek
+# Created: ‎Friday, ‎July ‎12, ‎2024, ‏‎9:14:09 AM
 # Description: Imports data file produced by specific test, prints summary statistics and creates
 #   matplotlib visualization; can be adjusted for specific column, default is forward RF power
 # To Do: Add method to verify/force selected files to be csv
@@ -62,3 +63,4 @@ plt.ylabel('Forward Power', fontdict=font)
 
 plt.grid()
 plt.show()
+
